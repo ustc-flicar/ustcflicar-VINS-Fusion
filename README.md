@@ -8,11 +8,11 @@ Download [USTC FLICAR Dataset](https://ustc-flicar.github.io/datasets/) to YOUR_
 Open four terminals, run vins odometry, visual loop closure(optional), rviz and play the bag file respectively. 
 Green path is VIO odometry; red path is odometry under visual loop closure.
 
-### 3.1 Monocualr camera + IMU
+### 1 Monocualr camera + IMU
 refer to [VINS-Mono]( https://github.com/ustc-flicar/ustcflicar-VINS-Mono)
 
 
-### 3.2 Stereo cameras
+### 2 Stereo cameras
 
 ```
     roslaunch vins vins_rviz.launch
@@ -20,7 +20,7 @@ refer to [VINS-Mono]( https://github.com/ustc-flicar/ustcflicar-VINS-Mono)
     (optional) rosrun loop_fusion loop_fusion_node ~/catkin_ws/src/VINS-Fusion/config/euroc/euroc_stereo_config.yaml 
     rosbag play YOUR_DATASET_FOLDER/hf001.bag
 ```
-### 3.3 Stereo cameras + IMU
+### 3 Stereo cameras + IMU
 
 ```
     roslaunch vins vins_rviz.launch
